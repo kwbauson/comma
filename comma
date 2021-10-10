@@ -4,4 +4,4 @@ nix() {
 }
 pkg=$1
 shift
-nix run NIXPKGS_PATH#"$pkg" -- "$@"
+nix run -f NIXPKGS_PATH "$pkg" -- "$@"
